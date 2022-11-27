@@ -35,7 +35,7 @@ import { FcShare, FcDonate, FcMoneyTransfer } from "react-icons/fc";
 
 export async function getServerSideProps(context) {
   let campaigns = await factory.methods.getDeployedCampaigns().call();
-  let valueToRemove = [campaigns[0]];
+  let valueToRemove = [campaigns[0], campaigns[6]];
   campaigns = campaigns.filter(element => !valueToRemove.includes(element));
   console.log(campaigns)
 
