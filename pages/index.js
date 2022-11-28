@@ -233,6 +233,18 @@ export default function Home({ campaigns }) {
           name="description"
           content="Boost your project Lower your taxes 🧪"
         />
+        <meta name="title" content="Boost your project Lower your taxes 🧪" />
+        <meta name="description" content="Boost your project Lower your taxes 🧪" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://boosterinu.com" />
+        <meta property="og:title" content="Boost your project Lower your taxes 🧪" />
+        <meta property="og:description" content="Boost your project Lower your taxes 🧪" />
+        <meta property="og:image" content="https://i.ibb.co/yW5XXbr/New-Project-3.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://boosterinu.com" />
+        <meta property="twitter:title" content="Boost your project Lower your taxes 🧪" />
+        <meta property="twitter:description" content="Boost your project Lower your taxes 🧪" />
+        <meta property="twitter:image" content="https://i.ibb.co/yW5XXbr/New-Project-3.png"></meta>
         <link rel="icon" href="/static/logo.png" />
       </Head>
       <main className={styles.main}>
