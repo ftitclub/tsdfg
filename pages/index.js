@@ -231,9 +231,9 @@ export default function Home({ campaigns }) {
         <title>Booster Inu</title>
         <meta
           name="description"
-          content="Transparent Crowdfunding in Blockchain"
+          content="Boost your project Lower your taxes 🧪"
         />
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="/static/logo.png" />
       </Head>
       <main className={styles.main}>
         <Container py={{ base: "4", md: "12" }} maxW={"7xl"} align={"left"}>
@@ -328,7 +328,7 @@ export default function Home({ campaigns }) {
               >
                 <Box height="18em">
                   <Img
-                    src={"https://i.ibb.co/Z6smqnp/Main-4.png"}
+                    src={"/static/1.png"}
                     alt={`Picture of Test`}
                     roundedTop="lg"
                     objectFit="cover"
@@ -403,7 +403,7 @@ export default function Home({ campaigns }) {
               >
                 <Box height="18em">
                   <Img
-                    src={"https://i.ibb.co/PQ5RFxv/Main-2.png"}
+                    src={"/static/3.png"}
                     alt={`Picture of Test`}
                     roundedTop="lg"
                     objectFit="cover"
@@ -478,7 +478,7 @@ export default function Home({ campaigns }) {
               >
                 <Box height="18em">
                   <Img
-                    src={"https://i.ibb.co/pxc3Qpz/Main-1.png"}
+                    src={"/static/2.png"}
                     alt={`Picture of Test`}
                     roundedTop="lg"
                     objectFit="cover"
