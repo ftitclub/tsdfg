@@ -17,6 +17,10 @@ const theme = extendTheme({
       200: '#05FD02',
       500: '#05FD02',
     }
+  },
+  config: {
+    initialColorMode: 'dark',
+    useSystemColorMode: false,
   }
 });
 
