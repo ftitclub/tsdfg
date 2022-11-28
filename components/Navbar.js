@@ -15,6 +15,7 @@ import {
   MenuItem,
 } from "@chakra-ui/react";
 import { useWallet } from "use-wallet";
+import NextImage from "next/image";
 
 import NextLink from "next/link";
 import DarkModeSwitch from "./DarkModeSwitch";
@@ -62,18 +63,13 @@ export default function NavBar() {
                 color={useColorModeValue("teal.400", "teal.300")}
                 position={"relative"}
                 zIndex={10}
-                _after={{
-                  content: '""',
-                  position: "absolute",
-                  left: 0,
-                  bottom: 0,
-                  w: "full",
-                  h: "30%",
-                  bg: useColorModeValue("teal.100", "teal.900"),
-                  zIndex: -1,
-                }}
               >
-                <NextLink href="/">🤝BetterFund</NextLink>
+                 <NextImage
+                    src="/static/logo.png"
+                    alt="Booster inu"
+                    width="75"
+                    height="75"
+                  />
               </Box>
             </Heading>
           </Flex>
@@ -84,14 +80,14 @@ export default function NavBar() {
             spacing={6}
             display={{ base: "none", md: "flex" }}
           >
-            <Button
+            {/* <Button
               fontSize={"md"}
               fontWeight={600}
               variant={"link"}
               display={{ base: "none", md: "inline-flex" }}
             >
               <NextLink href="/campaign/new">Create Campaign</NextLink>
-            </Button>
+            </Button> */}
             <Button
               fontSize={"md"}
               fontWeight={600}

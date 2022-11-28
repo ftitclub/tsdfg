@@ -10,6 +10,14 @@ const theme = extendTheme({
     heading: "Space Grotesk",
     body: "Space Grotesk",
   },
+  colors: {
+    teal: {
+      400: '#05FD02',
+      300: '#60FF5E',
+      200: '#05FD02',
+      500: '#05FD02',
+    }
+  }
 });
 
 function MyApp({ Component, pageProps }) {

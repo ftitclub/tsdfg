@@ -10,8 +10,9 @@ import {
   Heading,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaGithub, FaGlobe } from "react-icons/fa";
+import { FaChartArea, FaTwitter, FaEthereum, FaTelegram } from "react-icons/fa";
 import NextLink from "next/link";
+import NextImage from "next/image";
 
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -65,32 +66,27 @@ export default function Footer() {
             color={useColorModeValue("teal.400", "teal.300")}
             position={"relative"}
             zIndex={10}
-            _after={{
-              content: '""',
-              position: "absolute",
-              left: 0,
-              bottom: 0,
-              w: "full",
-              h: "30%",
-              bg: useColorModeValue("teal.100", "teal.900"),
-              zIndex: -1,
-            }}
           >
-            <NextLink href="/">🤝BetterFund</NextLink>
+            <NextImage
+              src="/static/logo.png"
+              alt="Booster inu"
+              width="75"
+              height="75"
+            />
           </Box>
         </Heading>
         <Stack direction={"row"} spacing={6}>
           <NextLink href="/">Home</NextLink>
           <Link
             href={
-              "https://github.com/harsh242/betterfund-crowdfunding-in-blockchain"
+              "https://etherscan.io"
             }
             isExternal
           >
-            Github
+            Contract
           </Link>
-          <Link href={"mailto:harshbadhai242@gmail.com"} isExternal>
-            Contact
+          <Link href={"mailto:boosterinu@gmail.com"} isExternal>
+            Inquiries
           </Link>
         </Stack>
       </Container>
@@ -109,26 +105,26 @@ export default function Footer() {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>🌐 Made while 💩 by Harsh, Hritvik , Nischal & Aaditya</Text>
+          <Text>🌐 Made with ❤️ by the Booster Inu team 🧪</Text>
           <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Website"} href={"https://harshbadhai.me/"}>
+            <SocialButton label={"Telegram"} href={"https://t.me/boosterinu"}>
               {" "}
-              <FaGlobe />
+              <FaTelegram />
             </SocialButton>
             <SocialButton
               label={"Twitter"}
-              href={"https://twitter.com/harshbadhai28"}
+              href={"https://twitter.com/boosterinu"}
             >
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={"Github"} href={"https://github.com/harsh242"}>
-              <FaGithub />
+            <SocialButton label={"Chart"} href={"https://dextools.io"}>
+              <FaChartArea />
             </SocialButton>
             <SocialButton
-              label={"Instagram"}
-              href={"https://www.instagram.com/frames_by._harsh/"}
+              label={"Uniswap"}
+              href={"https://www.uniswap.app"}
             >
-              <FaInstagram />
+              <FaEthereum />
             </SocialButton>
           </Stack>
         </Container>

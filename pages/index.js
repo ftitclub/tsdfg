@@ -228,7 +228,7 @@ export default function Home({ campaigns }) {
   return (
     <div>
       <Head>
-        <title>BetterFund</title>
+        <title>Booster Inu</title>
         <meta
           name="description"
           content="Transparent Crowdfunding in Blockchain"
@@ -245,9 +245,12 @@ export default function Home({ campaigns }) {
             as="h1"
             py={4}
           >
-            Crowdfunding using the powers of <br /> Crypto & Blockchain 😄{" "}
+            Boost your project <br /> Lower your taxes 🧪 {" "}
           </Heading>
-          <NextLink href="/campaign/new">
+          <NextLink
+            // href="/campaign/new"
+            href="/#howitworks"
+          >
             <Button
               display={{ sm: "inline-flex" }}
               fontSize={"md"}
@@ -258,11 +261,13 @@ export default function Home({ campaigns }) {
                 bg: "teal.300",
               }}
             >
-              Create Campaign
+              {/* Create Campaign */}
+              Learn More!
+
             </Button>
           </NextLink>
         </Container>
-        <Container py={{ base: "4", md: "12" }} maxW={"7xl"}>
+        {/* <Container py={{ base: "4", md: "12" }} maxW={"7xl"}>
           <HStack spacing={2}>
             <SkeletonCircle size="4" />
             <Heading as="h2" size="lg">
@@ -298,12 +303,249 @@ export default function Home({ campaigns }) {
               <Skeleton height="25rem" />
             </SimpleGrid>
           )}
+        </Container> */}
+        <Container py={{ base: "4", md: "12" }} maxW={"7xl"}>
+          <HStack spacing={2}>
+            <SkeletonCircle size="4" />
+            <Heading as="h2" size="lg">
+              What's the Fuss
+            </Heading>
+          </HStack>
+
+          <Divider marginTop="4" />
+          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} py={8}>
+            <div>
+              <Box
+                bg={useColorModeValue("white", "gray.800")}
+                maxW={{ md: "sm" }}
+                borderWidth="1px"
+                rounded="lg"
+                shadow="lg"
+                position="relative"
+                alignItems="center"
+                justifyContent="center"
+                transition={"transform 0.3s ease"}
+              >
+                <Box height="18em">
+                  <Img
+                    src={"https://i.ibb.co/Z6smqnp/Main-4.png"}
+                    alt={`Picture of Test`}
+                    roundedTop="lg"
+                    objectFit="cover"
+                    w="full"
+                    h="full"
+                    display="block"
+                  />
+                </Box>
+                <Box p="6">
+                  <Flex
+                    mt="1"
+                    justifyContent="space-between"
+                    alignContent="center"
+                    py={2}
+                  >
+                    <Box
+                      fontSize="2xl"
+                      fontWeight="semibold"
+                      as="h4"
+                      lineHeight="tight"
+                      isTruncated
+                    >
+                      Test
+                    </Box>
+                  </Flex>
+                  <Flex alignContent="center" py={2}>
+                    {" "}
+                    <Text color={"gray.500"} pr={2}>
+                      by
+                    </Text>{" "}
+                    <Heading size="base" isTruncated>
+                      Test here
+                    </Heading>
+                  </Flex>
+                  <Flex direction="row" py={2}>
+                    <Box w="full">
+                      <Box
+                        fontSize={"2xl"}
+                        isTruncated
+                        maxW={{ base: "	15rem", sm: "sm" }}
+                        pt="2"
+                      >
+
+                        <Text
+                          as="span"
+                          pr={2}
+                          fontWeight={"bold"}
+                        >
+                          {" "}
+                          ETH
+                        </Text>
+                      </Box>
+                      <Text fontSize={"md"} fontWeight="normal">
+                        target test
+                      </Text>
+                    </Box>{" "}
+                  </Flex>
+                </Box>
+              </Box>
+            </div>
+            <div>
+              <Box
+                bg={useColorModeValue("white", "gray.800")}
+                maxW={{ md: "sm" }}
+                borderWidth="1px"
+                rounded="lg"
+                shadow="lg"
+                position="relative"
+                alignItems="center"
+                justifyContent="center"
+                transition={"transform 0.3s ease"}
+              >
+                <Box height="18em">
+                  <Img
+                    src={"https://i.ibb.co/PQ5RFxv/Main-2.png"}
+                    alt={`Picture of Test`}
+                    roundedTop="lg"
+                    objectFit="cover"
+                    w="full"
+                    h="full"
+                    display="block"
+                  />
+                </Box>
+                <Box p="6">
+                  <Flex
+                    mt="1"
+                    justifyContent="space-between"
+                    alignContent="center"
+                    py={2}
+                  >
+                    <Box
+                      fontSize="2xl"
+                      fontWeight="semibold"
+                      as="h4"
+                      lineHeight="tight"
+                      isTruncated
+                    >
+                      Test
+                    </Box>
+                  </Flex>
+                  <Flex alignContent="center" py={2}>
+                    {" "}
+                    <Text color={"gray.500"} pr={2}>
+                      by
+                    </Text>{" "}
+                    <Heading size="base" isTruncated>
+                      Test here
+                    </Heading>
+                  </Flex>
+                  <Flex direction="row" py={2}>
+                    <Box w="full">
+                      <Box
+                        fontSize={"2xl"}
+                        isTruncated
+                        maxW={{ base: "	15rem", sm: "sm" }}
+                        pt="2"
+                      >
+
+                        <Text
+                          as="span"
+                          pr={2}
+                          fontWeight={"bold"}
+                        >
+                          {" "}
+                          ETH
+                        </Text>
+                      </Box>
+                      <Text fontSize={"md"} fontWeight="normal">
+                        target test
+                      </Text>
+                    </Box>{" "}
+                  </Flex>
+                </Box>
+              </Box>
+            </div>
+            <div>
+              <Box
+                bg={useColorModeValue("white", "gray.800")}
+                maxW={{ md: "sm" }}
+                borderWidth="1px"
+                rounded="lg"
+                shadow="lg"
+                position="relative"
+                alignItems="center"
+                justifyContent="center"
+                transition={"transform 0.3s ease"}
+              >
+                <Box height="18em">
+                  <Img
+                    src={"https://i.ibb.co/pxc3Qpz/Main-1.png"}
+                    alt={`Picture of Test`}
+                    roundedTop="lg"
+                    objectFit="cover"
+                    w="full"
+                    h="full"
+                    display="block"
+                  />
+                </Box>
+                <Box p="6">
+                  <Flex
+                    mt="1"
+                    justifyContent="space-between"
+                    alignContent="center"
+                    py={2}
+                  >
+                    <Box
+                      fontSize="2xl"
+                      fontWeight="semibold"
+                      as="h4"
+                      lineHeight="tight"
+                      isTruncated
+                    >
+                      Test
+                    </Box>
+                  </Flex>
+                  <Flex alignContent="center" py={2}>
+                    {" "}
+                    <Text color={"gray.500"} pr={2}>
+                      by
+                    </Text>{" "}
+                    <Heading size="base" isTruncated>
+                      Test here
+                    </Heading>
+                  </Flex>
+                  <Flex direction="row" py={2}>
+                    <Box w="full">
+                      <Box
+                        fontSize={"2xl"}
+                        isTruncated
+                        maxW={{ base: "	15rem", sm: "sm" }}
+                        pt="2"
+                      >
+
+                        <Text
+                          as="span"
+                          pr={2}
+                          fontWeight={"bold"}
+                        >
+                          {" "}
+                          ETH
+                        </Text>
+                      </Box>
+                      <Text fontSize={"md"} fontWeight="normal">
+                        target test
+                      </Text>
+                    </Box>{" "}
+                  </Flex>
+                </Box>
+              </Box>
+            </div>
+          </SimpleGrid>
         </Container>
         <Container py={{ base: "4", md: "12" }} maxW={"7xl"} id="howitworks">
           <HStack spacing={2}>
             <SkeletonCircle size="4" />
             <Heading as="h2" size="lg">
-              How BetterFund Works
+              How Booster Inu Works
             </Heading>
           </HStack>
           <Divider marginTop="4" />
@@ -331,13 +573,13 @@ export default function Home({ campaigns }) {
             />
           </SimpleGrid>
           <Heading as="h2" size="lg" mt="8">
-            For any queries raise an issue on{" "}
+            Keep track of improvements and news, follow us on our {" "}
             <Link
               color="teal.500"
-              href="https://github.com/harsh242/betterfund-crowdfunding-in-blockchain/issues"
+              href="https://twitter.com/boosterinu"
               isExternal
             >
-              the Github Repo <ExternalLinkIcon mx="2px" />
+              official Twitter <ExternalLinkIcon mx="2px" />
             </Link>{" "}
           </Heading>
           <Divider marginTop="4" />
