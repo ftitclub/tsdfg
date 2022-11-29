@@ -125,7 +125,7 @@ const RequestRow = ({
       <Td>
         <Link
           color="teal.500"
-          href={`https://rinkeby.etherscan.io/address/${request.recipient}`}
+          href={`https://etherscan.io/address/${request.recipient}`}
           isExternal
         >
           {" "}
@@ -283,7 +283,7 @@ export default function Requests({
   return (
     <div>
       <Head>
-        <title>Campaign Withdrawal Requests</title>
+        <title>Project Withdrawal Requests</title>
         <meta name="description" content="Create a Withdrawal Request" />
         <link rel="icon" href="/static/logo.png" />
       </Head>
@@ -295,17 +295,17 @@ export default function Requests({
               <Text fontSize={"lg"} color={"teal.400"}>
                 <ArrowBackIcon mr={2} />
                 <NextLink href={`/campaign/${campaignId}`}>
-                  Back to Campaign
+                  Back to Project
                 </NextLink>
               </Text>
             </Box>
             <Spacer />
             <Box py="4">
-              Campaign Balance :{" "}
+              Project Balance :{" "}
               <Text as="span" fontWeight={"bold"} fontSize="lg">
                 {balance > 0
                   ? web3.utils.fromWei(balance, "ether")
-                  : "0, Become a Donor 😄"}
+                  : "$0, Become a Donor 😄"}
               </Text>
               <Text
                 as="span"
@@ -331,7 +331,7 @@ export default function Requests({
             <Alert status="error" my={4}>
               <AlertIcon />
               <AlertDescription>
-                The Current Balance of the Campaign is 0, Please Contribute to
+                The Current Balance of the Project is 0, Please Contribute to
                 approve and finalize Requests.
               </AlertDescription>
             </Alert>
@@ -349,7 +349,7 @@ export default function Requests({
                   isTruncated
                   maxW={"3xl"}
                 >
-                  Withdrawal Requests for {name} Campaign
+                  Withdrawal Requests for {name} Project
                 </Heading>
               </Box>
               <Spacer />
@@ -445,7 +445,7 @@ export default function Requests({
                   as="h4"
                   size="md"
                 >
-                  No Requests yet for {name} Campaign
+                  No Requests yet for {name} Project
                 </Heading>
                 <Text
                   textAlign={useBreakpointValue({ base: "center" })}
@@ -453,7 +453,7 @@ export default function Requests({
                   fontSize="sm"
                 >
                   Create a Withdrawal Request to Withdraw funds from the
-                  Campaign😄
+                  Project :)
                 </Text>
 
                 <Button
@@ -480,7 +480,7 @@ export default function Requests({
                   }}
                 >
                   <NextLink href={`/campaign/${campaignId}/`}>
-                    Go to Campaign
+                    Go to Project
                   </NextLink>
                 </Button>
               </SimpleGrid>

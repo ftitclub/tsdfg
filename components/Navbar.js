@@ -13,6 +13,7 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  Link,
 } from "@chakra-ui/react";
 import { useWallet } from "use-wallet";
 import NextImage from "next/image";
@@ -64,12 +65,14 @@ export default function NavBar() {
                 position={"relative"}
                 zIndex={10}
               >
-                 <NextImage
+                <Link href="/">
+                  <NextImage
                     src="/static/logo.png"
                     alt="Booster inu"
                     width="75"
                     height="75"
                   />
+                </Link>
               </Box>
             </Heading>
           </Flex>
@@ -80,14 +83,14 @@ export default function NavBar() {
             spacing={6}
             display={{ base: "none", md: "flex" }}
           >
-            {/* <Button
+            <Button
               fontSize={"md"}
               fontWeight={600}
               variant={"link"}
               display={{ base: "none", md: "inline-flex" }}
             >
-              <NextLink href="/campaign/new">Create Campaign</NextLink>
-            </Button> */}
+              <NextLink href="/campaign/new">Add Project</NextLink>
+            </Button>
             <Button
               fontSize={"md"}
               fontWeight={600}

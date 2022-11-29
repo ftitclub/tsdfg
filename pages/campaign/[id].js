@@ -157,7 +157,7 @@ export default function CampaignSingle({
   return (
     <div>
       <Head>
-        <title>Campaign Details</title>
+        <title>Project Details</title>
         <meta name="description" content="Create a Withdrawal Request" />
         <link rel="icon" href="/static/logo.png" />
       </Head>
@@ -209,10 +209,10 @@ export default function CampaignSingle({
               </Text>
               <Link
                 color="teal.500"
-                href={`https://rinkeby.etherscan.io/address/${id}`}
+                href={`https://etherscan.io/address/${id}`}
                 isExternal
               >
-                View on Rinkeby Etherscan <ExternalLinkIcon mx="2px" />
+                View on Etherscan <ExternalLinkIcon mx="2px" />
               </Link>
               <Box mx={"auto"} w={"full"}>
                 <SimpleGrid columns={{ base: 1 }} spacing={{ base: 5 }}>
@@ -230,10 +230,10 @@ export default function CampaignSingle({
                     }
                   />
                   <StatsCard
-                    title={"Wallet Address of Campaign Creator"}
+                    title={"Wallet Address of Project Owner"}
                     stat={manager}
                     info={
-                      "The Campaign Creator created the campaign and can create requests to withdraw money."
+                      "The Project owner created the project and can create requests to withdraw money."
                     }
                   />
                   <StatsCard
@@ -265,10 +265,10 @@ export default function CampaignSingle({
                   <StatLabel fontWeight={"medium"}>
                     <Text as="span" isTruncated mr={2}>
                       {" "}
-                      Campaign Balance
+                      Project Balance
                     </Text>
                     <Tooltip
-                      label="The balance is how much money this campaign has left to
+                      label="The balance is how much money this project has left to
                   spend."
                       bg={useColorModeValue("white", "gray.700")}
                       placement={"top"}

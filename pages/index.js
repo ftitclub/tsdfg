@@ -35,7 +35,7 @@ import { FcShare, FcDonate, FcMoneyTransfer } from "react-icons/fc";
 
 export async function getServerSideProps(context) {
   let campaigns = await factory.methods.getDeployedCampaigns().call();
-  let valueToRemove = [campaigns[0], campaigns[6]];
+  let valueToRemove = [campaigns[0], campaigns[1],campaigns[2],campaigns[3],campaigns[6],campaigns[4],campaigns[5],campaigns[6]];
   campaigns = campaigns.filter(element => !valueToRemove.includes(element));
   console.log(campaigns)
 
@@ -273,17 +273,17 @@ export default function Home({ campaigns }) {
                 bg: "teal.300",
               }}
             >
-              {/* Create Campaign */}
-              Learn More!
+              Add Project
+              {/* Learn More! */}
 
             </Button>
           </NextLink>
         </Container>
-        {/* <Container py={{ base: "4", md: "12" }} maxW={"7xl"}>
+        <Container py={{ base: "4", md: "12" }} maxW={"7xl"}>
           <HStack spacing={2}>
             <SkeletonCircle size="4" />
             <Heading as="h2" size="lg">
-              Open Campaigns
+              Open Projects
             </Heading>
           </HStack>
 
@@ -315,7 +315,7 @@ export default function Home({ campaigns }) {
               <Skeleton height="25rem" />
             </SimpleGrid>
           )}
-        </Container> */}
+        </Container>
         <Container py={{ base: "4", md: "12" }} maxW={"7xl"}>
           <HStack spacing={2}>
             <SkeletonCircle size="4" />
@@ -564,16 +564,16 @@ export default function Home({ campaigns }) {
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} py={8}>
             <Feature
               icon={<Icon as={FcDonate} w={10} h={10} />}
-              title={"Create a Campaign for Fundraising"}
+              title={"Add a project for Funding"}
               text={
                 "It’ll take only 2 minutes. Just enter a few details about the funds you are raising for."
               }
             />
             <Feature
               icon={<Icon as={FcShare} w={10} h={10} />}
-              title={"Share your Campaign"}
+              title={"Share your Project"}
               text={
-                "All you need to do is share the Campaign with your friends, family and others. In no time, support will start pouring in."
+                "All you need to do is share the project with your community. In no time, support will start pouring in."
               }
             />
             <Feature

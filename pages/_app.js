@@ -30,11 +30,11 @@ function MyApp({ Component, pageProps }) {
       {" "}
       <ChakraProvider theme={theme}>
         <UseWalletProvider
-          chainId={5}
+          chainId={1}
           connectors={{
             walletconnect: {
               rpcUrl:
-                "https://goerli.infura.io/v3/163e42bccd004713966e146cc114be28",
+                "https://mainnet.infura.io/v3/ed446063ba7b44b4b5e8214500f42bac",
             },
           }}
         >
