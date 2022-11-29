@@ -273,8 +273,8 @@ export default function Home({ campaigns }) {
                 bg: "teal.300",
               }}
             >
-              Add Project
-              {/* Learn More! */}
+              {/* Add Project */}
+              Learn More!
 
             </Button>
           </NextLink>
@@ -289,7 +289,7 @@ export default function Home({ campaigns }) {
 
           <Divider marginTop="4" />
 
-          {campaignList.length > 0 ? (
+          {/* {campaignList.length > 0 ? (
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} py={8}>
               {campaignList.map((el, i) => {
                 return (
@@ -314,7 +314,7 @@ export default function Home({ campaigns }) {
               <Skeleton height="25rem" />
               <Skeleton height="25rem" />
             </SimpleGrid>
-          )}
+          )} */}
         </Container>
         <Container py={{ base: "4", md: "12" }} maxW={"7xl"}>
           <HStack spacing={2}>
