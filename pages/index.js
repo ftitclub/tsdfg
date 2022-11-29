@@ -231,19 +231,19 @@ export default function Home({ campaigns }) {
         <title>Booster Inu</title>
         <meta
           name="description"
-          content="Boost your project Lower your taxes 🧪"
+          content="Boost the project Lower the taxes 🧪"
         />
-        <meta name="title" content="Boost your project Lower your taxes 🧪" />
-        <meta name="description" content="Boost your project Lower your taxes 🧪" />
+        <meta name="title" content="Boost the project Lower the taxes 🧪" />
+        <meta name="description" content="Boost the project Lower the taxes 🧪" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://boosterinu.com" />
-        <meta property="og:title" content="Boost your project Lower your taxes 🧪" />
-        <meta property="og:description" content="Boost your project Lower your taxes 🧪" />
+        <meta property="og:title" content="Boost the project Lower the taxes 🧪" />
+        <meta property="og:description" content="Boost the project Lower the taxes 🧪" />
         <meta property="og:image" content="https://i.ibb.co/yW5XXbr/New-Project-3.png" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://boosterinu.com" />
-        <meta property="twitter:title" content="Boost your project Lower your taxes 🧪" />
-        <meta property="twitter:description" content="Boost your project Lower your taxes 🧪" />
+        <meta property="twitter:title" content="Boost the project Lower the taxes 🧪" />
+        <meta property="twitter:description" content="Boost the project Lower the taxes 🧪" />
         <meta property="twitter:image" content="https://i.ibb.co/yW5XXbr/New-Project-3.png"></meta>
         <link rel="icon" href="/static/logo.png" />
       </Head>
@@ -257,7 +257,7 @@ export default function Home({ campaigns }) {
             as="h1"
             py={4}
           >
-            Boost your project <br /> Lower your taxes 🧪 {" "}
+            Boost the project <br /> Lower the taxes 🧪 {" "}
           </Heading>
           <NextLink
             // href="/campaign/new"
@@ -365,13 +365,13 @@ export default function Home({ campaigns }) {
                       lineHeight="tight"
                       isTruncated
                     >
-                      Boost your project
+                      Boost the project
                     </Box>
                   </Flex>
                   <Flex alignContent="center" py={2}>
                     {" "}
                     <Heading size="base" isTruncated>
-                      Be transparent<br/>Be trustworthy<br/>Boost your project<br/>Lower your taxes
+                      Be transparent<br/>Be trustworthy<br/>Boost the project<br/>Lower the taxes
                     </Heading>
                   </Flex>
                 </Box>
