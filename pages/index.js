@@ -365,40 +365,14 @@ export default function Home({ campaigns }) {
                       lineHeight="tight"
                       isTruncated
                     >
-                      Test
+                      Boost your project
                     </Box>
                   </Flex>
                   <Flex alignContent="center" py={2}>
                     {" "}
-                    <Text color={"gray.500"} pr={2}>
-                      by
-                    </Text>{" "}
                     <Heading size="base" isTruncated>
-                      Test here
+                      Be transparent<br/>Be trustworthy<br/>Boost your project<br/>Lower your taxes
                     </Heading>
-                  </Flex>
-                  <Flex direction="row" py={2}>
-                    <Box w="full">
-                      <Box
-                        fontSize={"2xl"}
-                        isTruncated
-                        maxW={{ base: "	15rem", sm: "sm" }}
-                        pt="2"
-                      >
-
-                        <Text
-                          as="span"
-                          pr={2}
-                          fontWeight={"bold"}
-                        >
-                          {" "}
-                          ETH
-                        </Text>
-                      </Box>
-                      <Text fontSize={"md"} fontWeight="normal">
-                        target test
-                      </Text>
-                    </Box>{" "}
                   </Flex>
                 </Box>
               </Box>
@@ -440,40 +414,16 @@ export default function Home({ campaigns }) {
                       lineHeight="tight"
                       isTruncated
                     >
-                      Test
+                      $BINU Details
                     </Box>
                   </Flex>
                   <Flex alignContent="center" py={2}>
                     {" "}
-                    <Text color={"gray.500"} pr={2}>
-                      by
-                    </Text>{" "}
                     <Heading size="base" isTruncated>
-                      Test here
+                      Buy/Sell tax - 3%<br/>
+                      Ownership Renounced<br/> Liquidity Locked 3mo.<br/>
+                      1MIL total supply
                     </Heading>
-                  </Flex>
-                  <Flex direction="row" py={2}>
-                    <Box w="full">
-                      <Box
-                        fontSize={"2xl"}
-                        isTruncated
-                        maxW={{ base: "	15rem", sm: "sm" }}
-                        pt="2"
-                      >
-
-                        <Text
-                          as="span"
-                          pr={2}
-                          fontWeight={"bold"}
-                        >
-                          {" "}
-                          ETH
-                        </Text>
-                      </Box>
-                      <Text fontSize={"md"} fontWeight="normal">
-                        target test
-                      </Text>
-                    </Box>{" "}
                   </Flex>
                 </Box>
               </Box>
@@ -515,40 +465,14 @@ export default function Home({ campaigns }) {
                       lineHeight="tight"
                       isTruncated
                     >
-                      Test
+                      Be the Voice
                     </Box>
                   </Flex>
                   <Flex alignContent="center" py={2}>
                     {" "}
-                    <Text color={"gray.500"} pr={2}>
-                      by
-                    </Text>{" "}
                     <Heading size="base" isTruncated>
-                      Test here
+                      Participate in fundraising<br/>Earn special perks<br/>such as NFTs,<br/>tokens, or whitelist spots
                     </Heading>
-                  </Flex>
-                  <Flex direction="row" py={2}>
-                    <Box w="full">
-                      <Box
-                        fontSize={"2xl"}
-                        isTruncated
-                        maxW={{ base: "	15rem", sm: "sm" }}
-                        pt="2"
-                      >
-
-                        <Text
-                          as="span"
-                          pr={2}
-                          fontWeight={"bold"}
-                        >
-                          {" "}
-                          ETH
-                        </Text>
-                      </Box>
-                      <Text fontSize={"md"} fontWeight="normal">
-                        target test
-                      </Text>
-                    </Box>{" "}
                   </Flex>
                 </Box>
               </Box>
