@@ -79,7 +79,7 @@ export default function Footer() {
           <NextLink href={"/"}>Whitepaper (soon)</NextLink>
           <Link
             href={
-              "https://etherscan.io"
+              "https://etherscan.io/address/0xabbea34248fa9bcb0090b70b010773f59659da0e"
             }
             isExternal
           >
@@ -117,12 +117,12 @@ export default function Footer() {
             >
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={"Chart"} href={"https://dextools.io"}>
+            <SocialButton label={"Chart"} href={"https://www.dextools.io/app/en/ether/pair-explorer/0xddbf84b77cab492afe11949fc91ab79b5a1405ea"}>
               <FaChartArea />
             </SocialButton>
             <SocialButton
               label={"Uniswap"}
-              href={"https://www.uniswap.app"}
+              href={"https://app.uniswap.org/#/swap?outputCurrency=0xabbea34248fa9bcb0090b70b010773f59659da0e"}
             >
               <FaEthereum />
             </SocialButton>
