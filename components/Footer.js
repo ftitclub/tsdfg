@@ -76,7 +76,7 @@ export default function Footer() {
           </Box>
         </Heading>
         <Stack direction={"row"} spacing={6}>
-          <NextLink href={"/"}>Whitepaper (soon)</NextLink>
+          <NextLink href={"/static/whitepaper.pdf"}>Whitepaper</NextLink>
           <Link
             href={
               "https://etherscan.io/address/0xabbea34248fa9bcb0090b70b010773f59659da0e"
