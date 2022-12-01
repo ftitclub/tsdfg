@@ -136,6 +136,36 @@ export default function NavBar() {
 
           <Flex display={{ base: "flex", md: "none" }}>
             <DarkModeSwitch />
+            {wallet.status === "connected" ? (
+              <Menu>
+                <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+                  {wallet.account.substr(0, 10) + "..."}
+                </MenuButton>
+                <MenuList>
+                  <MenuItem onClick={() => wallet.reset()}>
+                    {" "}
+                    Disconnect Wallet{" "}
+                  </MenuItem>
+                </MenuList>
+              </Menu>
+            ) : (
+              <div>
+                <Button
+                  display={{  md: "inline-flex" }}
+                  fontSize={"md"}
+                  fontWeight={600}
+                  color={"white"}
+                  bg={"teal.400"}
+                  href={"#"}
+                  _hover={{
+                    bg: "teal.300",
+                  }}
+                  onClick={() => wallet.connect()}
+                >
+                  Connect Wallet{" "}
+                </Button>
+              </div>
+            )}
           </Flex>
         </Container>
       </Flex>
