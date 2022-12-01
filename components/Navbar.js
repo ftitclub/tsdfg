@@ -83,14 +83,14 @@ export default function NavBar() {
             spacing={6}
             display={{ base: "none", md: "flex" }}
           >
-            {/* <Button
+            <Button
               fontSize={"md"}
               fontWeight={600}
               variant={"link"}
               display={{ base: "none", md: "inline-flex" }}
             >
               <NextLink href="/campaign/new">Add Project</NextLink>
-            </Button> */}
+            </Button>
             <Button
               fontSize={"md"}
               fontWeight={600}

@@ -35,7 +35,7 @@ import { FcShare, FcDonate, FcMoneyTransfer } from "react-icons/fc";
 
 export async function getServerSideProps(context) {
   let campaigns = await factory.methods.getDeployedCampaigns().call();
-  let valueToRemove = [];
+  let valueToRemove = [campaigns[0]];
   campaigns = campaigns.filter(element => !valueToRemove.includes(element));
   console.log(campaigns)
 
@@ -260,8 +260,8 @@ export default function Home({ campaigns }) {
             Boost the project <br /> Lower the taxes 🧪 {" "}
           </Heading>
           <NextLink
-            // href="/campaign/new"
-            href="/#howitworks"
+            href="/campaign/new"
+            // href="/#howitworks"
           >
             <Button
               display={{ sm: "inline-flex" }}
@@ -273,13 +273,13 @@ export default function Home({ campaigns }) {
                 bg: "teal.300",
               }}
             >
-              {/* Add Project */}
-              Learn More!
+              Add Project
+              {/* Learn More! */}
 
             </Button>
           </NextLink>
         </Container>
-        {/* <Container py={{ base: "4", md: "12" }} maxW={"7xl"}>
+        <Container py={{ base: "4", md: "12" }} maxW={"7xl"}>
           <HStack spacing={2}>
             <SkeletonCircle size="4" />
             <Heading as="h2" size="lg">
@@ -316,13 +316,13 @@ export default function Home({ campaigns }) {
             </SimpleGrid>
            )}
         </Container> 
-          remove
-        */}
+          
+       
         <Container py={{ base: "4", md: "12" }} maxW={"7xl"}>
           <HStack spacing={2}>
             <SkeletonCircle size="4" />
             <Heading as="h2" size="lg">
-              What's the Fuss
+              About $BINU
             </Heading>
           </HStack>
 
